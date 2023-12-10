@@ -1,0 +1,154 @@
+/* Variáveis para mudança de cores */
+:root {
+    --cor1: rgb(216, 212, 212);
+    --cor2: rgb(241, 236, 236);
+    --cor3: rgb(8, 8, 8);
+    --cor4: #000000;
+    --cor5: #FFFFFF;
+    --cor6: #111010;
+}
+
+/* Plano de fundo em cinza */
+.background {
+    background-color: var(--cor1);
+}
+
+/*Classe para manipular o cabeçalho*/
+
+header {
+    position: sticky;
+    border: 1px solid;
+    top: 0;
+}
+
+.cabecalho {
+    margin: 1em;
+    background-color: var(--cor2);
+    padding: 1em;
+    position: sticky;
+}
+
+nav {
+    position: sticky;
+    background-color: var(--cor2)
+}
+
+/*Classe para manipular conteúdo do menu de navegação*/
+.navegacao_cont {
+    margin: 1em 0;
+    padding: 10px;
+    color: var(--cor3);
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+}
+
+nav li {
+    display: inline-block;
+    padding: 1em;
+}
+
+nav li ul {
+    display: none;
+}
+
+nav li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Classe para manipular a logo*/
+.img_logo {
+    text-align: center;
+    max-width: 200px;
+    max-height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+/*Classe para manipular as figuras do corpo do site*/
+.img_figura {
+    margin: 1em 0;
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    padding: 1em;
+}
+
+/*Classe manipular a figura do lado do "comece sua experiência"*/
+.img_experiencia {
+    margin: 1em 0;
+    max-width: 600px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    padding: 1em;
+}
+
+/*Classe manipular a descricaos*/
+.descricao1 {
+    color: var(--cor4);
+    font-family: Century, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    margin: auto;
+
+}
+
+.descricao2 {
+    color: var(--cor4);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: left;
+    padding: 1em;
+    margin: auto;
+
+}
+
+/*Classe manipular a descricaos "comece sua experiência e contrate"*/
+.comece_exp {
+    font-size: 20px;
+    border: 1px solid var(--cor4);
+    background-color: var(--cor4);
+    color: var(--cor5);
+    padding: 1em;
+    margin-bottom: 1em;
+
+}
+
+/*Classe manipular a descricaos "rodapé"*/
+.descricao3 {
+    text-align: center;
+    color: var(--cor6);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    padding: 6em;
+    margin: 0;
+}
+
+/*Classe para alterar o modo de exbição*/
+.exibicao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3em;
+    margin: 0;
+}
+
+article {
+    max-width: 600px;
+}
